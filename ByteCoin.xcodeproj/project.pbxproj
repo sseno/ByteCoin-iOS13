@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69879D6B23F549B6003F572B /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 69879D6A23F549B6003F572B /* LBTATools */; };
+		69879D6D23F549E3003F572B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69879D6C23F549E3003F572B /* MainViewController.swift */; };
+		69879D6F23F55B9F003F572B /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69879D6E23F55B9F003F572B /* CoinModel.swift */; };
 		ADA8AC092329367100626376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC082329367100626376 /* AppDelegate.swift */; };
 		ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0A2329367100626376 /* SceneDelegate.swift */; };
 		ADA8AC0D2329367100626376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC0C2329367100626376 /* ViewController.swift */; };
@@ -17,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69879D6C23F549E3003F572B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		69879D6E23F55B9F003F572B /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		ADA8AC052329367100626376 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA8AC082329367100626376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADA8AC0A2329367100626376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69879D6B23F549B6003F572B /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA8AC0C2329367100626376 /* ViewController.swift */,
+				69879D6C23F549E3003F572B /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				ADA8AC1F2329398300626376 /* CoinManager.swift */,
+				69879D6E23F55B9F003F572B /* CoinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +118,9 @@
 			dependencies = (
 			);
 			name = ByteCoin;
+			packageProductDependencies = (
+				69879D6A23F549B6003F572B /* LBTATools */,
+			);
 			productName = ByteCoin;
 			productReference = ADA8AC052329367100626376 /* ByteCoin.app */;
 			productType = "com.apple.product-type.application";
@@ -138,6 +149,9 @@
 				Base,
 			);
 			mainGroup = ADA8ABFC2329367100626376;
+			packageReferences = (
+				69879D6923F549B6003F572B /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = ADA8AC062329367100626376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -169,6 +183,8 @@
 				ADA8AC0D2329367100626376 /* ViewController.swift in Sources */,
 				ADA8AC092329367100626376 /* AppDelegate.swift in Sources */,
 				ADA8AC0B2329367100626376 /* SceneDelegate.swift in Sources */,
+				69879D6F23F55B9F003F572B /* CoinModel.swift in Sources */,
+				69879D6D23F549E3003F572B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		69879D6923F549B6003F572B /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69879D6A23F549B6003F572B /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69879D6923F549B6003F572B /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADA8ABFD2329367100626376 /* Project object */;
 }
